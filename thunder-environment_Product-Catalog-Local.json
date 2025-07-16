@@ -1,0 +1,16 @@
+{
+  "client": "Thunder Client",
+  "environmentName": "Product-Catalog-Local",
+  "dateExported": "2024-07-15T16:55:00.000Z",
+  "version": "1.0",
+  "variables": [
+    {
+      "name": "jwt_token",
+      "value": ""
+    },
+    {
+      "name": "product_id",
+      "value": ""
+    }
+  ]
+} 

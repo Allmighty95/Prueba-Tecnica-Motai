@@ -1,0 +1,128 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Product-Catalog-API",
+  "dateExported": "2024-07-15T16:55:00.000Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "name": "Auth",
+      "id": "auth",
+      "requests": [
+        {
+          "name": "Register",
+          "id": "register",
+          "method": "POST",
+          "url": "http://localhost:3001/auth/register",
+          "body": {
+            "type": "json",
+            "raw": "{\n  \"email\": \"usuario@ejemplo.com\",\n  \"password\": \"password123\"\n}"
+          },
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "id": "login",
+          "method": "POST",
+          "url": "http://localhost:3001/auth/login",
+          "body": {
+            "type": "json",
+            "raw": "{\n  \"email\": \"usuario@ejemplo.com\",\n  \"password\": \"password123\"\n}"
+          },
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "id": "products",
+      "requests": [
+        {
+          "name": "Create Product",
+          "id": "create-product",
+          "method": "POST",
+          "url": "http://localhost:3001/products",
+          "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"Laptop Gaming\",\n  \"description\": \"Laptop gaming de última generación\",\n  \"price\": 1299.99\n}"
+          },
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer {{jwt_token}}"
+            }
+          ]
+        },
+        {
+          "name": "Get All Products",
+          "id": "get-products",
+          "method": "GET",
+          "url": "http://localhost:3001/products",
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{jwt_token}}"
+            }
+          ]
+        },
+        {
+          "name": "Get Product by ID",
+          "id": "get-product",
+          "method": "GET",
+          "url": "http://localhost:3001/products/{{product_id}}",
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{jwt_token}}"
+            }
+          ]
+        },
+        {
+          "name": "Update Product",
+          "id": "update-product",
+          "method": "PATCH",
+          "url": "http://localhost:3001/products/{{product_id}}",
+          "body": {
+            "type": "json",
+            "raw": "{\n  \"price\": 1199.99\n}"
+          },
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer {{jwt_token}}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Product",
+          "id": "delete-product",
+          "method": "DELETE",
+          "url": "http://localhost:3001/products/{{product_id}}",
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{jwt_token}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,19 @@
+{
+    "environments": [
+        {
+            "name": "Local",
+            "_id": "local-env",
+            "default": true,
+            "data": [
+                {
+                    "name": "jwt_token",
+                    "value": ""
+                },
+                {
+                    "name": "product_id",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+} 
