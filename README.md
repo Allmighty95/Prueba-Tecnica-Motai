@@ -21,7 +21,6 @@ Esta es una API RESTful desarrollada con NestJS que proporciona funcionalidades 
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/Allmighty95/Prueba-Tecnica-Motai.git
-cd product-catalog
 ```
 
 2. Instalar dependencias:
